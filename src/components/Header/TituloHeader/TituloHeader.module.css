@@ -1,0 +1,211 @@
+.tituloHeader {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 80px;
+}
+
+.tituloHeader > span {
+    display: block;
+}
+
+.tituloHeader h1, .tituloHeader h2 {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.tituloHeader h1 {
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #00A54F;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.tituloHeader h2 {
+    font-size: 3.2em;
+}
+
+.tituloHeader h2 > span:first-of-type {
+    color: #00A54F;
+}
+
+.tituloHeader h2 > span:first-of-type > span {
+    display: block;
+}
+
+.tituloHeader h2 > span:nth-of-type(2), .tituloHeader h2 > span:nth-of-type(3) {
+    color: #F5841E;
+}
+
+.tituloHeader h2 > span:nth-of-type(2) {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: -20px;
+}
+
+.tituloHeader h2 > span:nth-of-type(3) {
+    font-size: 2em;
+    background-image: linear-gradient(180deg, #FE8920 30%, #bd7434 69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*---------VERSAO CELULAR ------------*/
+@media screen and (max-width: 480px) {
+    .tituloHeader h1, .tituloHeader h2 {
+        text-align: center;
+    }
+    
+    .tituloHeader h1 {
+        font-size: 1.8em;
+        color: #00be5c;
+    }
+
+    .tituloHeader h2 > span:first-of-type {
+        color: #00be5c;
+    }
+
+    .tituloHeader h2 {
+        font-size: 2.5em;
+    }
+
+    .tituloHeader h2 > span:nth-of-type(2), .tituloHeader h2 > span:nth-of-type(3) {
+        color: #ff8a24;
+    }
+
+    .tituloHeader h2 > span:nth-of-type(3) {
+        background-image: linear-gradient(180deg, #ff8a24 50%, #cf6b13 70%);
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .tituloHeader h1, .tituloHeader h2 {
+        text-align: center;
+    }
+    
+    .tituloHeader h1 {
+        font-size: 2.5em;
+        color: #00be5c;
+    }
+
+    .tituloHeader h2 {
+        font-size: 3em;
+    }
+
+    .tituloHeader h2 > span:first-of-type {
+        color: #00be5c;
+    }
+
+    .tituloHeader h2 > span:nth-of-type(2), .tituloHeader h2 > span:nth-of-type(3) {
+        color: #ff8a24;
+    }
+
+    .tituloHeader h2 > span:nth-of-type(3) {
+        background-image: linear-gradient(180deg, #ff8a24 50%, #cf6b13 70%);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .tituloHeader h1, .tituloHeader h2 {
+        text-align: center;
+    }
+    
+    .tituloHeader h1 {
+        font-size: 2.7em;
+    }
+
+    .tituloHeader h2 {
+        font-size: 3.5em;
+    }
+
+    .tituloHeader h2 > span:first-of-type {
+        color: #00be5c;
+    }
+
+    .tituloHeader h2 > span:nth-of-type(2), .tituloHeader h2 > span:nth-of-type(3) {
+        color: #ff8a24;
+    }
+
+    .tituloHeader h2 > span:nth-of-type(3) {
+        background-image: linear-gradient(180deg, #ff8a24 50%, #cf6b13 70%);
+    }
+}
+
+/*---------VERSAO CELULAR ------------*/
+/*MAX-WIDTH: 768PX*/
+/* @media screen and (max-width: 768px) {
+    .tituloHeader > div,
+    .tituloHeader h2 {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .tituloHeader h1 {
+        width: 100%;
+        text-align: center;
+    }
+} */
+
+/*MIN-WIDTH: 391PX AND MAX-WIDTH: 550PX*/
+/* @media screen and (min-width: 391px) and (max-width: 550px) {
+    .tituloHeader h1 {
+        font-size: 1.5em;
+    }
+
+    .tituloHeader span:first-of-type {
+        font-size: 2.5em;
+        height: 30%;
+    }
+
+    .subtituloHeader p:nth-of-type(2) {
+        font-size: 3.3em;
+        height: 16%;
+    }
+
+    .subtituloHeader p:last-of-type {
+        font-size: 5.5em;
+    }
+} */
+
+/*MAX-WIDTH: 390PX*/
+/* @media screen and (max-width: 390px) {
+    .tituloHeader h1 {
+        font-size: 1em;
+    }
+
+    .tituloHeader h2 > span:first-of-type {
+        font-size: 2em;
+        height: 25%;
+    }
+
+    .tituloHeader h2 > span:nth-of-type(2) {
+        font-size: 2.8em;
+        height: 15%;
+    }
+
+    .titulo h2 > span:nth-of-type(3) {
+        font-size: 5em;
+    }
+} */
+
+/*----------VERSAO TABLET-------------*/
+/*MIN-WIDTH: 761PX AND MAX-WIDTH: 1199PX*/
+/* @media screen and (min-width: 761px) and (max-width: 1199px) {
+    .tituloHeader {
+        width: 100%;
+        padding-left: 1.5em;
+    }
+
+    .tituloHeader > div {
+        width: 100%;
+    }
+
+    .subtituloHeader p:first-of-type {
+        width: 10em;
+    }
+} */

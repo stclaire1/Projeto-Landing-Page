@@ -1,0 +1,129 @@
+.chamadaFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.chamadaFormulario h3 {
+    font-size: 2.7em;
+    margin-bottom: 80px;
+}
+
+.chamadaFormulario p {
+    width: 570px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.chamadaFormulario span {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+    .chamadaFormulario h3 {
+        font-size: 1.7em;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .chamadaFormulario p {
+        max-width: 450px;
+        width: 90%;
+        font-size: 1.3em;
+        text-align: justify;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+    .chamadaFormulario h3 {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    .chamadaFormulario p {
+        max-width: 450px;
+        width: 90%;
+        font-size: 1.3em;
+        text-align: justify;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+    .chamadaFormulario {
+        padding-left: 5%;
+    }
+
+    .chamadaFormulario h3 {
+        font-size: 1.9em;
+    }
+
+    .chamadaFormulario p {
+        max-width: 400px;
+        width: 100%;
+        font-size: 1.3em;
+        text-align: justify;
+        margin-bottom: 60px;
+    }
+}
+
+/*------------VERSAO CELULAR------------*/
+/* @media screen and (max-width: 768px) {
+    .chamadaFormulario {
+        width: 100%;
+        align-items: center;
+    }
+
+    .chamadaFormulario h3 {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 1.5em;
+    }
+
+    .chamadaFormulario p {
+        font-size: 1.2em;
+        text-align: center;
+        white-space: pre-line;
+        width: 20em;
+        line-height: 1.3em;
+    }
+} */
+
+/* @media screen and (max-width: 390px) {
+    .chamadaFormulario {
+        width: 18em;
+    }
+
+    .chamadaFormulario p {
+        width: 100%;
+    }
+} */
+
+/* @media screen and (min-width: 550px) and (max-width: 767px) {
+    .chamadaFormulario h3 {
+        font-size: 2.5em;
+    }
+
+    .chamadaFormulario p {
+        font-size: 1.3em;
+        width: 25em;
+        line-height: 1.5em;
+    }
+} */
+/*-------------VERSAO TABLET---------------*/
+/* @media screen and (min-width: 769px) and (max-width: 1199px) {
+    .chamadaFormulario {
+        padding: 0em 2em;
+    }
+
+    .chamadaFormulario h3 {
+        font-size: 2.9em;
+    }
+
+    .chamadaFormulario p {
+        width: 100%;
+    }
+} */

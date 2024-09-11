@@ -1,0 +1,7 @@
+/* .secaoProdutos .swiper-button-next, .secaoProdutos .swiper-button-prev {
+    padding: 0 2em;
+} */
+
+.swiper-slide-active {
+    margin-bottom: 20px;
+}

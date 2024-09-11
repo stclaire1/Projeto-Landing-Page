@@ -1,0 +1,224 @@
+.sobreNos{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sobreNos > div{
+    width: 1250px;
+}
+
+.sobreNos > div h3{
+    font-size: 2.3em;
+    color: #F7931E;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.sobreNosDescricao{
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.sobreNosDescricao > span {
+    display: block;
+}
+
+.sobreNosFuncionalidades {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.funcionalidade{
+    text-align: center;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.funcionalidade > img{
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100px; /* Limita a largura máxima */
+    object-fit: contain; /* Garante que a imagem seja exibida por completo, sem cortar */
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+.funcionalidade > h5{
+    margin-bottom: 0.5em;
+    color: #F7931E;
+    font-size: 1.8em;
+}
+
+.funcionalidade > p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/* Tamanho de tela: 1300px */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .sobreNos > div h3 {
+        width: 70%;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    } 
+
+    .sobreNosDescricao > span {
+        display: inline;
+    }
+
+    .sobreNosDescricao {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .sobreNosFuncionalidades {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        margin-top: 40px; 
+    }
+    
+    .sobreNos > div {
+        width: 100%;
+    }
+
+    .sobreNos > div h3 {
+        font-size: 2em;
+    }
+
+    .funcionalidade {
+        width: 300px;
+        margin: 0 20px;
+    }
+
+    .funcionalidade p {
+        font-size: 1.2em;
+    }
+
+    .sobreNosDescricao {
+        font-size: 1.2em;
+    }
+}
+
+/* Tamanho de tela: 768px */
+@media (max-width: 768px) {
+    .sobreNos > div {
+        width: 100%;
+    }
+
+    .sobreNos > div h3, .sobreNosDescricao {
+        width: 90%;
+        margin: auto;
+    } 
+
+    .sobreNos > div h3 {
+        font-size: 1.5em;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .sobreNos > div h5 {
+        font-size: 1.7em;
+    }
+
+    .sobreNosDescricao > span {
+        display: inline;
+    }
+
+    .funcionalidade {
+        width: 70%; /* Uma funcionalidade por linha */
+    }
+
+    .funcionalidade > img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .funcionalidade > p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .sobreNosDescricao {
+        font-size: 1.2em;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+
+    .sobreNosFuncionalidades {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 20px; 
+    }
+}
+
+/* Tamanho de tela: 480px */
+/* @media (max-width: 480px) {
+    .sobreNos > div {
+        width: 100%;
+    }
+
+    .sobreNos > div h3, .sobreNosDescricao {
+        width: 90%;
+        margin: auto;
+    } 
+
+    .sobreNos > div h3 {
+        font-size: 1.5em;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .sobreNos > div h5 {
+        font-size: 1.7em;
+    }
+
+    .sobreNosDescricao > span {
+        display: inline;
+    }
+
+    .funcionalidade {
+        width: 90%; Uma funcionalidade por linha
+    }
+
+    .funcionalidade > img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .funcionalidade > p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .sobreNosDescricao {
+        font-size: 1.2em;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+
+    .sobreNosFuncionalidades {
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 20px; 
+    }
+} */

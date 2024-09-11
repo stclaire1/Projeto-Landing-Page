@@ -1,0 +1,60 @@
+.carrosselImg {
+    width: 85%;
+    margin: auto;
+}
+
+.carrosselImg img {
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    object-fit: cover; /* Cobre todo o container, cortando se necessário, mantendo a proporção */
+    padding-bottom: 2.3em;
+}
+
+/* Estilos das setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #E77D1D; /* Cor laranja das setas */
+    width: 30px; /* Largura das setas */
+    height: 30px; /* Altura das setas */
+}
+
+/* Estilos das bolinhas de paginação */
+.swiper-pagination-bullet {
+    background-color: #FFE1C6; /* Cor laranja para as bolinhas */
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px; /* Espaçamento entre as bolinhas */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #E77D1D; /* Cor laranja para a bolinha ativa */
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+    }
+
+    .carrosselImg {
+        width: 100vw;
+        margin: auto;
+    }
+
+    .carrosselImg img {
+        height: 400px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+    display: none;
+    }
+}
+
+/* @media screen and (min-width: 769px) and (max-width: 1300px) {
+    .carrosselImg {
+        width: 85%;
+        margin: auto;
+    }
+} */

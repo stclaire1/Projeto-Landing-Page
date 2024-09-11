@@ -1,0 +1,39 @@
+.header {
+    background-image: url('../../assets/img/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header > div {
+    max-width: 1250px;
+    width: 95%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.header > div > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        background-image: url('../../assets/img/backgroundHeaderResponsivo.png');
+    }
+
+    .header > div {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .header {
+        background-image: url('../../assets/img/backgroundHeaderResponsivo.png');
+    }
+
+    .header > div {
+        width: 95%;
+    }
+}

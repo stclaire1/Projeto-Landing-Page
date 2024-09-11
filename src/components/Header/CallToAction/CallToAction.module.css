@@ -1,0 +1,101 @@
+.botoesHeader {
+    display: flex;
+    justify-content: space-evenly;
+
+    max-width: fit-content;
+    padding-bottom: 100px;
+    padding-top: 35px;
+
+    /* border: 1px solid red; */
+}
+
+.botoesHeader a:link, .botoesHeader a:visited, .botoesHeader a:active {
+    text-decoration: none;
+    color: white;
+    background-color: #00A650;
+    padding: 13px 45px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+.botoesHeader a:hover {
+    background-color: #097c35;
+}
+
+.botoesHeader > a:first-of-type {
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .botoesHeader {
+        margin: auto;
+    }
+
+    .botoesHeader a:link, .botoesHeader a:visited, .botoesHeader a:active {
+        font-size: 1em;
+        padding: 15px 15px;
+    }
+
+    .botoesHeader > a:first-of-type {
+        margin-right: 30px;
+    }
+
+    .botoesHeader a:link, .botoesHeader a:visited, .botoesHeader a:active {
+        background-color: #00be5c;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .botoesHeader {
+        margin: auto;
+    }
+
+    .botoesHeader a:link, .botoesHeader a:visited, .botoesHeader a:active {
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .botoesHeader {
+        margin: auto;
+    }
+}
+
+/*----------- versao celular e tablet ------------*/
+/*MAX-WIDTH 768PX*/
+/* @media screen and (max-width: 768px) {
+    .botoesHeader {
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 4em;
+    }
+
+    .botoesHeader a {
+        padding: 0.6em 1.5em;
+        margin-right: 0px;
+    }
+} */
+
+/*MIN-WIDTH 391PX AND MAX-WIDTH 550PX*/
+/* @media screen and (min-width: 391px) and (max-width: 550px) {
+    .botoesHeader a {
+        padding: 0.8em 1.2em;
+        font-size: 1em;
+    }
+} */
+
+/*MAX-WIDTH 390PX*/
+/* @media screen and (max-width: 390px) {
+    .botoesHeader {
+        padding-bottom: 2em;
+    }
+
+    .botoesHeader a {
+        padding: 0.6em 1.2em;
+        font-size: 0.9em;
+    }
+} */

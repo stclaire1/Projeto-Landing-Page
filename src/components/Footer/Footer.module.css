@@ -1,0 +1,242 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1250px;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.descricaoLateral {
+    display: flex;
+    flex-direction: column;
+}
+
+.descricaoLateral img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.descricaoLateral p {
+    width: 200px;
+}
+
+.infoMatriz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoMatriz .contatos {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.infoMatriz > p {
+    font-weight: bold;
+    color: #F5841E;
+    margin-bottom: 20px;
+}
+
+.infoMatriz ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 90%;
+}
+
+.infoMatriz li {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.infoMatriz li img,
+.infoMatriz .contatos img {
+    width: 1.5em;
+    object-fit: contain;
+}
+
+.infoMatriz li p {
+    margin-left: 10px;
+}
+
+.navLateral li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.navLateral {
+    border-left: 2px solid #F5841E;
+    padding-left: 25px;
+}
+
+.navLateral a:link,
+.navLateral a:visited {
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+
+.navLateral a:hover {
+    color: #F5841E;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+    .navLateral {
+        display: none;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .descricaoLateral {
+        width: 40%;
+    }
+
+    .descricaoLateral p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .infoMatriz .contatos p {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: row; /* Coloca descricaoLateral e infoMatriz lado a lado */
+        justify-content: space-between; /* Adiciona espaçamento entre os elementos */
+        align-items: center; /* Alinha ao topo */
+        width: 90%;
+        padding: 0 20px;
+        position: relative; /* Para posicionar a navLateral na parte de baixo */
+    }
+
+    .descricaoLateral, .infoMatriz {
+        flex: 1; /* Garante que os elementos dividam o espaço igualmente */
+        max-width: 50%; /* Limita cada um a ocupar no máximo 50% da tela */
+        text-align: left; /* Ajusta o alinhamento do texto à esquerda */
+    }
+
+    .descricaoLateral {
+        margin-right: 20px; /* Adiciona um espaçamento entre as duas seções */
+    }
+
+    .infoMatriz {
+        margin-top: 15px;
+    }
+
+    .infoMatriz > p {
+        text-align: center;
+    }
+
+    .infoMatriz .contatos p {
+        margin-left: 10px;
+    }
+
+    .infoMatriz ul {
+        flex-direction: column; /* Deixa os itens de contato em coluna */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        justify-content: center;
+        width: 100%;
+    }
+
+    .infoMatriz li {
+        padding: 7px 0;
+    }
+
+    /* Coloca a navLateral na parte inferior */
+    .navLateral {
+        display: none;
+    }
+}
+
+/* Media query para telas de 550px */
+@media (max-width: 550px) {
+    .container {
+        display: flex;
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px; /* Adiciona espaço para evitar sobreposição */
+        width: 100%;
+    }
+
+    .descricaoLateral, .infoMatriz {
+        max-width: 80%;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .descricaoLateral img {
+        width: 100px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .descricaoLateral p {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+    }
+
+    .infoMatriz {
+        margin: 20px 0; /* Adiciona espaço extra abaixo de infoMatriz */
+        text-align: center;
+    }
+
+    .infoMatriz ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .infoMatriz li {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .infoMatriz .contatos {
+        margin: 20px 0;
+    }
+
+    .infoMatriz .contatos p {
+        margin-left: 10px;
+    }
+
+    /* Ajuste a navLateral para ficar no final da seção */
+    .navLateral {
+        position: static; /* Remove o posicionamento absoluto */
+        width: fit-content;
+        padding: 0;
+        border-left: none;
+
+    }
+
+    .navLateral ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navLateral li {
+        margin-bottom: 15px;
+    }
+
+    .navLateral a:link,
+    .navLateral a:visited {
+        color: #F5841E;
+        font-weight: bold;
+    }
+}

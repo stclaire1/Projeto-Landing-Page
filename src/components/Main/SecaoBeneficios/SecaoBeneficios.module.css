@@ -1,0 +1,429 @@
+.secaoBeneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url('../../../assets/img/fundoDegradeAlt.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom; 
+}
+
+#beneficios {
+    width: 1250px;
+}
+
+.beneficio.invertido {
+    flex-direction: row-reverse;
+}
+
+.beneficio{
+    display: flex;
+}
+
+.texto {
+    color: #00A54F; 
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto > h2{
+    font-size: 1.9em;
+    color: #00A54F; 
+    font-weight: 550;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.texto > h3{
+    font-size: 1.2em;
+    color: #727775; 
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.texto > p{
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
+}
+
+.beneficio1 {
+    margin-bottom: 130px;
+    margin-top: 90px;
+}
+
+.beneficio2 {
+    margin-bottom: 140px;
+}
+
+.beneficio1 .texto, .beneficio2 .texto{
+    max-width: 500px;
+}
+
+.beneficio1 .texto {
+    text-align: right;
+    margin-right: 5em;
+}
+
+.beneficio2 .texto {
+    text-align: left;
+    margin-left: 5em;
+}
+
+.beneficio2 .texto h2{
+    color: #F7931E; 
+}
+
+.containerBeneficios .imagem{
+    height: auto;
+    width: 95%;
+}
+
+.containerBeneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    #beneficios {
+        width: 100%;
+        margin: auto;
+    }
+
+    .secaoBeneficios {
+        background-color: #eafff2;
+        margin-top: 50px;
+    }
+
+    .beneficio,
+    .beneficio.invertido {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 340px;
+    }
+
+    .beneficio1 .texto, .beneficio2 .texto {
+        text-align: center;
+        width: 100%;
+    }
+
+    .containerBeneficios .imagem {
+        width: 100%;
+        text-align: center;
+    }
+
+    .beneficio1 .texto {
+        margin-right: 0;
+    }
+    
+    .beneficio2 .texto {
+        margin-left: 0;
+    }
+
+    .texto > h2{
+        font-size: 1.5em;
+        margin-bottom: 7px;
+    }
+    
+    .texto > h3{
+        font-size: 1.1em;
+    }
+    
+    .texto > p{
+        font-size: 1em;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .beneficio1 {
+        margin-bottom: 70px;
+        margin-top: 60px;
+    }
+
+    .beneficio2 {
+        margin-bottom: 90px;
+    }
+
+    .beneficio2 .texto h2 {
+        width: 345px;
+    }
+
+    .tituloBeneficios {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+    #beneficios {
+        width: 90%;
+    }
+
+    .containerBeneficios {
+        margin: auto;
+    }
+
+    .secaoBeneficios {
+        background-color: #eafff2;
+        margin-top: 50px;
+    }
+
+    .beneficio,
+    .beneficio.invertido {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 450px;
+    }
+
+    .beneficio1 .texto, .beneficio2 .texto {
+        text-align: center;
+        width: 100%;
+    }
+
+    .containerBeneficios .imagem {
+        width: 100%;
+        text-align: center;
+    }
+
+    .beneficio1 .texto {
+        margin-right: 0;
+    }
+    
+    .beneficio2 .texto {
+        margin-left: 0;
+    }
+
+    .texto > h2{
+        font-size: 1.5em;
+        width: 350px;
+        margin: auto;
+        margin-bottom: 7px;
+    }
+    
+    .texto > h3{
+        font-size: 1.1em;
+    }
+    
+    .texto > p{
+        font-size: 1em;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .beneficio1 {
+        margin-bottom: 70px;
+        margin-top: 60px;
+    }
+
+    .beneficio2 {
+        margin-bottom: 90px;
+    }
+
+    .tituloBeneficios {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1300px) {
+    #beneficios {
+        width: 90%;
+    }
+
+    .secaoBeneficios {
+        background-color: #eafff2;
+        margin-top: 50px;
+    }
+
+    .beneficio,
+    .beneficio.invertido {
+        align-items: center;
+        justify-content: center;
+
+        width: 90%;
+        margin: auto;
+    }
+
+    .beneficio1 .texto, .beneficio2 .texto {
+        max-width: 400px;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .texto > p{
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .beneficio1 .texto > p {
+        text-align: right;
+    }
+    
+    .beneficio2 .texto > p {
+        text-align: left;
+    }
+
+    .containerBeneficios .imagem {
+        width: 400px;
+        text-align: center;
+    }
+    
+    .texto > h3{
+        font-size: 1.1em;
+    }
+
+    .beneficio1, .beneficio2 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .beneficio1 {
+        margin-bottom: 70px;
+        margin-top: 60px;
+    }
+
+    .beneficio2 {
+        margin-bottom: 90px;
+    }
+
+    .tituloBeneficios {
+        margin-top: 30px;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+    .secaoBeneficios {
+        background-color: #eafff2;
+        background-image: none;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .secaoBeneficios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        background-image: url('../../../assets/img/fundoDegradeAlt.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom; 
+    }
+
+    .beneficio,
+    .beneficio.invertido {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid red;
+    }
+
+    .beneficio1 .texto, .beneficio2 .texto {
+        text-align: justify;
+    }
+
+    .imagemBeneficios {
+        height: auto;
+        transform: scale(0.9);
+        width: 20em;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .textoBeneficios {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .containerBeneficios{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 80%;
+          height: auto;
+      }
+
+    .containerBeneficios {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin: auto;
+    }
+
+    .containerBeneficios>img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .secaoBeneficios>img {
+        text-align: center;
+    }
+
+    .tituloBeneficios {
+        font-size: 1.8em;
+        margin-top: 2em;
+    }
+
+    .textoBeneficios>h2 {
+        font-size: 1.2em;
+    }
+
+    .beneficio {
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .secaoBeneficios {
+        padding: 20px;
+        background-color: #eafff2;
+        background-image: none;
+        background-size: cover;
+    }
+
+    .secaoBeneficios>div {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .tituloBeneficios {
+        font-size: 2em;
+        margin-top: 2em;
+    }
+
+    .subtituloBeneficios {
+        font-size: 1em;
+    }
+
+    .textoBeneficios>p {
+        font-size: 0.8em;
+    }
+
+    .textoBeneficios>h2 {
+        font-size: 1em;
+    }
+
+    .imagemBeneficios {
+        height: auto;
+        width: 20em;
+        display: block;
+        margin: 0 auto;
+    }
+} */

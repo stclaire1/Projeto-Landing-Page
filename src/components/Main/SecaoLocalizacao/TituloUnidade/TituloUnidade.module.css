@@ -1,0 +1,29 @@
+.unidades {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #3B8B61;
+    text-transform: uppercase;
+    margin-top: 6em;
+    margin-bottom: 4em;
+}
+
+.unidades h2 {
+    font-size: 1.7em;
+    margin-left: 12px;
+}
+
+@media screen and (max-width: 480px) {
+    .unidades h2 {
+        font-size: 1.3em;
+        margin-left: 5px;
+    }
+
+    .unidades img {
+        width: 40px;
+    }
+
+    .unidades {
+        justify-content: center;
+    }
+}

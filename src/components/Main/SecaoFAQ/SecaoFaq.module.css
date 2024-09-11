@@ -1,0 +1,354 @@
+.secao_FAQ {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.cabecalhoFAQ {
+    background-color: #ffe1c6;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtituloFAQ span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subtituloFAQ {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.2em;
+    width: 50%;
+}
+
+.perguntas {
+    width: 1250px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.paragrafoFAQ {
+    padding-top: 30px;
+    font-size: .7em;
+    text-align: left;
+    width: 35%;
+}
+
+.containerFAQ {
+    background-image: url("../../../assets/img/fundoLaranja.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 350px;
+    padding: 30px 0;
+    color: #db6b09;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 1250px;
+}
+
+.details {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+    border-radius: 5px;
+    text-align: justify;
+    justify-content: center;
+    display: flex;
+}
+
+/* Estilo para o summary, com seta à direita e estilização de cor */
+.summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    padding-right: 1.5rem;
+}
+
+.summary::after {
+    content: ">";
+    color: orange;
+    font-weight: bold;
+    margin-left: auto;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.details[open] .summary::after {
+    transform: rotate(90deg);
+    color: green;
+}
+
+.details[open] .summary {
+    font-weight: bold;
+}
+
+.details p {
+    margin-top: 0.5rem;
+    font-size: 1.2em;
+    color: #555;
+    padding-top: 15px;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1300px) {
+    .details,
+    .summary,
+    .pergunta {
+        font-size: 1.1em;
+    }
+
+    .summary::after {
+        margin-left: 20px;
+    }
+
+    .containerFAQ{
+        margin: auto;
+        height: 300px;
+        background-image: none;
+        background-color: #ffe1c6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalhoFAQ > div {
+        width: 90%;
+        align-items: start;
+        text-align: left;
+    }
+
+    .containerFAQ h2 {
+        font-size: .9em;
+        font-weight: 700;
+    }
+
+    .containerFAQ p {
+        font-size: .7em;
+        width: 50%;
+        text-align: left;
+    }
+
+    .perguntas {
+        width: 90%;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .subtituloFAQ {
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 1em;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .paragrafoFAQ {
+        font-size: 0.7em;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .cabecalhoFAQ {
+        text-align: center;
+        width: 100%;
+    }
+
+    .pergunta {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .secao_FAQ {
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .containerFAQ>div {
+        width: 100%;
+        margin: auto;
+    }
+
+    .details {
+        margin-bottom: 10px;
+    }
+
+    .details p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .details,
+    .summary,
+    .pergunta {
+        font-size: 1.1em;
+    }
+
+    .summary::after {
+        margin-left: 20px;
+    }
+
+    .containerFAQ{
+        margin: auto;
+        height: 300px;
+        background-image: none;
+        background-color: #ffe1c6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalhoFAQ > div {
+        width: 90%;
+        align-items: start;
+        text-align: left;
+    }
+
+    .containerFAQ h2 {
+        font-size: .7em;
+        font-weight: 700;
+    }
+
+    .containerFAQ p {
+        font-size: .6em;
+        width: 80%;
+        text-align: left;
+    }
+
+    .perguntas {
+        width: 90%;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .subtituloFAQ {
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 1em;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .paragrafoFAQ {
+        font-size: 0.7em;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .cabecalhoFAQ {
+        text-align: center;
+        width: 100%;
+    }
+
+    .pergunta {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .secao_FAQ {
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .containerFAQ>div {
+        width: 100%;
+        margin: auto;
+    }
+
+    .details {
+        margin-bottom: 10px;
+    }
+
+    .details p {
+        font-size: 1em;
+    }
+}
+
+/* @media screen and (min-width: 761px) and (max-width: 1300px) {
+    .containerFAQ {
+        background-image: none;
+        background-color: #ffe1c6;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .perguntas {
+        width: 90%;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .containerFAQ h2 {
+        font-size: ;
+    }
+
+    .subtituloFAQ {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .paragrafoFAQ {
+        padding: 10px;
+        font-size: 0.7em;
+        font-weight: 500;
+        text-align: left;
+        width: 55%;
+    }
+
+    .details {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: justify;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+
+    .cabecalhoFAQ > div {
+        width: 100%;
+    }
+
+    .containerFAQ h2 {
+        text-align: left;
+        width: 100%;
+        font-size: .9em;
+    }
+
+    .containerFAQ p {
+        width: 60%;
+        font-size: .7em;
+        padding: 0;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .pergunta {
+        padding: 20px;
+    }
+
+    .cabecalhoFAQ>div {
+        
+    } */
+/* } */

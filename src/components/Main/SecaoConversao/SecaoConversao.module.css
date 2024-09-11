@@ -1,0 +1,31 @@
+.sectionFormularioBackground {
+    background-image: url('../../../assets/img/backgroundFormulario.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+   padding: 130px 0;
+}
+
+.sectionFormularioBackground div{
+    width: 1250px;
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+    .sectionFormularioBackground div {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+    .sectionFormularioBackground div {
+        width: 100%;
+        justify-content: center;
+    }
+}
