@@ -56,7 +56,7 @@ function Formulario() {
     }
 
     return (
-        <div className={styles.formulario} id='faleConosco'>
+        <div className={styles.formulario}>
             <form>
                 <div className={styles.inputBox}>
                     <label htmlFor="">Nome</label>

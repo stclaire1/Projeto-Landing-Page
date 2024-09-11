@@ -23,7 +23,7 @@ function SecaoBeneficios() {
                     <Beneficio
                         titulo="Cashback e Acúmulo de Pontos"
                         subtitulo="vários benefícios"
-                        descricao="Pague seu abastecimento pelo App Premmia com PIX ou cartão de crédito e ganhe até 6% de cashback, também acumule pontos."
+                        descricao="Pague seu abastecimento pelo App Premmia com PIX ou cartão de crédito e ganhe até 6% de cashback. Pagando pelo App você também acumula pontos!"
                         imagem={imgCelular}
                         invertido
                         />

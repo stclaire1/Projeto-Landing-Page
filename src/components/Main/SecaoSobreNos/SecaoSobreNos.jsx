@@ -14,7 +14,7 @@ function SecaoSobreNos() {
                     HÁ <span className={styles.destaque}>20 ANOS</span> OFERECENDO QUALIDADE E CONFIANÇA PARA VOCÊ E SEU VEÍCULO
                 </h3>
                 <p className={styles.sobreNosDescricao}>
-                    <span>A <strong>equipe de postos JL </strong>equipe de postos JL sabe da importância de construir uma <strong>empresa sólida,</strong></span> <span>comprometida com o trabalho que desempenha e com a qualidade</span> dos produtos que oferece aos seus clientes.
+                    <span>A <strong>equipe de postos JL </strong>sabe da importância de construir uma <strong>empresa sólida,</strong></span> <span>comprometida com o trabalho que desempenha e com a qualidade</span> dos produtos que oferece aos seus clientes.
                 </p>
                 <Carrossel />
                 <div className={styles.sobreNosFuncionalidades}>

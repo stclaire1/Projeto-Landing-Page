@@ -5,7 +5,7 @@ function CallToAction() {
     return (
         <div className={styles.botoesHeader}>
             <a href="#quemSomos">Quem somos</a>
-            <a href="#faleConosco">Onde estamos</a>
+            <a href="#faleConosco">Fale conosco</a>
         </div>
     );
 }
